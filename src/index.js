@@ -1,22 +1,20 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-import styles from './styles.css'
+const Error = () => {
+  return <div>Component Type not found on Selector</div>;
+};
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+const Requite = props => {
+  const ErrorHandler = props.error || Error;
+  const Handler = props.list[props.type] || ErrorHandler;
+  return <Handler {...props} />;
+};
 
-  render() {
-    const {
-      text
-    } = this.props
+Requite.propTypes = {
+  error: PropTypes.element,
+  list: PropTypes.object.isRequired,
+  type: PropTypes.any.isRequired
+};
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export default Requite;

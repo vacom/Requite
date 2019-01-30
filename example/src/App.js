@@ -1,13 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import ExampleComponent from 'requite'
+import Requite from "requite";
+
+const Text = () => <p>Hello Text Component</p>;
+const Header = () => <h1>Hello Header Component</h1>;
 
 export default class App extends Component {
-  render () {
+  render() {
+    const Components = {
+      1: Text,
+      Header: Header
+    };
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <Requite list={Components} type={"Header"} />
       </div>
-    )
+    );
   }
 }
