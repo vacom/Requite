@@ -12,7 +12,7 @@ const Requite = props => {
 };
 
 Requite.propTypes = {
-  error: PropTypes.node,
+  error: PropTypes.any,
   list: PropTypes.object.isRequired,
   type: PropTypes.any.isRequired
 };
