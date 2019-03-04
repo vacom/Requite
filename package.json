@@ -1,6 +1,6 @@
 {
   "name": "requite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamic selector for React components",
   "author": "vacom",
   "license": "MIT",
