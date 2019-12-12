@@ -4,7 +4,7 @@ Dynamic selector for React components. Great for creating dynamic pages. Through
 
 [![NPM](https://img.shields.io/npm/v/requite.svg)](https://www.npmjs.com/package/requite) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![Requite](http://i63.tinypic.com/zv6e0l.jpg)
+![Requite](https://i.imgur.com/HVNMt4J.jpg)
 
 ## Installation
 
